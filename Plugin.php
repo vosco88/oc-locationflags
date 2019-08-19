@@ -21,7 +21,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'vosco.locationflags::lang.plugin.name',
             'description' => 'vosco.locationflags::lang.plugin.description',
-            'author'      => 'Vosco',
+            'author'      => 'JanVoscek',
             'icon'        => 'icon-map-marker'
         ];
     }
