@@ -1,4 +1,4 @@
-<?php namespace Infiniit\LocationFlags;
+<?php namespace InfiniIT\LocationFlags;
 
 use Backend;
 use System\Classes\PluginBase;
