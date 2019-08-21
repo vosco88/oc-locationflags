@@ -1,4 +1,4 @@
-<?php namespace Vosco\LocationFlags;
+<?php namespace Infiniit\LocationFlags;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -19,9 +19,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'vosco.locationflags::lang.plugin.name',
-            'description' => 'vosco.locationflags::lang.plugin.description',
-            'author'      => 'JanVoscek',
+            'name'        => 'infiniit.locationflags::lang.plugin.name',
+            'description' => 'infiniit.locationflags::lang.plugin.description',
+            'author'      => 'InfiniIT',
             'icon'        => 'icon-map-marker'
         ];
     }
@@ -54,12 +54,12 @@ class Plugin extends PluginBase
 
 			$list->addColumns([
 				'flag' => [
-					'label' => 'vosco.locationflags::lang.flag',
+					'label' => 'infiniit.locationflags::lang.flag',
                     'sortable' => false,
                     'searchable' => false,
                     'invisible' => 'true',
                     'type' => 'partial',
-                    'path' => '~/plugins/vosco/locationflags/models/country/_flag_column.htm',
+                    'path' => '~/plugins/infiniit/locationflags/models/country/_flag_column.htm',
                     'width' => '5%'
 				]
 			]);
@@ -74,8 +74,8 @@ class Plugin extends PluginBase
 
 		$form->addFields([
 			'flag' => [
-				'label'   => 'vosco.locationflags::lang.flag',
-                'comment' => 'vosco.locationflags::lang.fields.comment',
+				'label'   => 'infiniit.locationflags::lang.flag',
+                'comment' => 'infiniit.locationflags::lang.fields.comment',
                 'align' => 'auto',
 				'mode' => 'image',
 				'type' => 'fileupload'
@@ -95,7 +95,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'Vosco\LocationFlags\Components\MyComponent' => 'myComponent',
+            'infiniit\LocationFlags\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -109,7 +109,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'vosco.locationflags.some_permission' => [
+            'infiniit.locationflags.some_permission' => [
                 'tab' => 'LocationFlags',
                 'label' => 'Some permission'
             ],
