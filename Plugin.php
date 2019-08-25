@@ -123,7 +123,8 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-
+        return [];
+        
         return [
             'locationflags' => [
                 'label'       => 'rainlab.location::lang.locations.menu_label',
