@@ -19,8 +19,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'infiniit.locationflags::lang.plugin.name',
-            'description' => 'infiniit.locationflags::lang.plugin.description',
+            'name'        => 'Location Flags',
+            'description' => 'Adds option to insert flag of a country in Location Plugin',
             'author'      => 'InfiniIT',
             'icon'        => 'icon-map-marker'
         ];
